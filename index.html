@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calc</title>
+    <script type="text/javascript"  src="commutator.js"></script>
+
+</head>
+<br>
+
+    <input placeholder="Введите число" id="num1" type="number">
+    <br>
+    <input type="radio" name="radiobutton" value="+" id="+" />
+        +
+    <input type="radio" name="radiobutton" value="-" id="-" />
+        -
+    <input type="radio" name="radiobutton" value="/" id="/" />
+        /
+    <input type="radio" name="radiobutton" value="*" id="*" />
+        *
+    <br>
+    <input placeholder="Введите число" id="num2" type="number">
+    <br>
+    <br>
+    <button onclick="counter(document.getElementById('num1').value,
+    document.getElementById('num2').value)"> Посчитать </button>
+    <label id="result" style="visibility: hidden;"></label>
+</body>
+</html>

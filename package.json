@@ -1,0 +1,29 @@
+{
+  "name": "unit-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha Tests.js",
+    "cover-test": "nyc mocha Tests.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "fs-extra": "^7.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
