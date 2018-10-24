@@ -1,4 +1,5 @@
-import count from "./calculator.js"
+import count from "./calculator.js";
+const assert = require("assert");
 
 
 describe('Calculator tests', () => {

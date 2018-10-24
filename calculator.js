@@ -20,7 +20,6 @@ function sub(num1, num2) {
 
 
 
-
 export default function count(num1, num2, sign) {
     let res;
         if(sign == "+")
