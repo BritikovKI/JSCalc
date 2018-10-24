@@ -1,10 +1,9 @@
-import count from './calculator.js'
-
+"use strict";
+import count from "./calculator.js"
 
 function counter(num1, num2) {
     let res;
-    document.getElementById("num1").innerText = "";
-    document.getElementById("num2").innerText = "";
+
     if ( num1=="" || num2=="" ) {
         document.getElementById("result").innerText = "Неправильное выражение";
         document.getElementById("result").style["visibility"] = "visible";
@@ -13,13 +12,15 @@ function counter(num1, num2) {
     }
     else {
         res = count(num1,num2,get_operation())
+
     }
+    document.getElementById("num1").innerText = "";
+    document.getElementById("num2").innerText = "";
     document.getElementById("result").innerText = res;
     document.getElementById("result").style["visibility"] = "visible";
     return
 }
 
-document.getElementById("cnt").onclick = counter(document.getElementById('num1').value, document.getElementById('num2').value);
 
 
 function get_operation() {
@@ -32,3 +33,6 @@ function get_operation() {
     }
     return sign;
 }
+
+
+document.getElementById("cnt").onclick = ()=>{counter(document.getElementById('num1').value, document.getElementById('num2').value);};
