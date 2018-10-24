@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Calc</title>
-    <script type="text/javascript"  src="commutator.js"></script>
-
+    <script type="module" src="./calculator.js"></script>
+    <script type="module"  src="./commutator.js"></script>
 </head>
 <br>
 
@@ -22,8 +22,10 @@
     <input placeholder="Введите число" id="num2" type="number">
     <br>
     <br>
-    <button onclick="counter(document.getElementById('num1').value,
-    document.getElementById('num2').value)"> Посчитать </button>
+    <button id="cnt"> Посчитать </button>
     <label id="result" style="visibility: hidden;"></label>
+
+
 </body>
+
 </html>

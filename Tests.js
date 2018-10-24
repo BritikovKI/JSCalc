@@ -1,9 +1,5 @@
-const count = require("/home/chapay/WebstormProjects/Calculator/calculator.js");
-const fs = require('fs-extra');
-const assert = require('assert');
-const { COPYFILE_EXCL } = fs.constants;
-const http = require('http');
-// console.log("http: ", fs);
+import count from "./calculator.js"
+
 
 describe('Calculator tests', () => {
     let app;

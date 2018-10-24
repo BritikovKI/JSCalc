@@ -1,3 +1,6 @@
+import count from './calculator.js'
+
+
 function counter(num1, num2) {
     let res;
     document.getElementById("num1").innerText = "";
@@ -15,6 +18,8 @@ function counter(num1, num2) {
     document.getElementById("result").style["visibility"] = "visible";
     return
 }
+
+document.getElementById("cnt").onclick = counter(document.getElementById('num1').value, document.getElementById('num2').value);
 
 
 function get_operation() {

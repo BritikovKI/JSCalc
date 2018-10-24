@@ -1,3 +1,5 @@
+
+
 let numbers = ['1','2','3','4','5','6','7','8','9','0']
 
 
@@ -20,7 +22,7 @@ function sub(num1, num2) {
 
 
 
-module.exports=function count(num1, num2, sign) {
+export default function count(num1, num2, sign) {
     let res;
         if(sign == "+")
         {
